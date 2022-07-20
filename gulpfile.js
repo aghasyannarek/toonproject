@@ -117,8 +117,8 @@ function watch () {
 		server: {
 			baseDir: path
 		},
-		tunnel: true,
-		online: true
+		//tunnel: true,
+		//online: true
 	});
 
 	gulp.watch("./src/libs/*", libs);
@@ -145,5 +145,3 @@ gulp.task("watch", watch);
 gulp.task("build", gulp.series(clean, gulp.parallel(htmls, preproc, styles, scripts, img, fonts, libs)));
 
 gulp.task("dev", gulp.series("build", "watch"));
-
-

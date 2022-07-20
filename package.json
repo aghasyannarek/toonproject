@@ -1,21 +1,21 @@
 {
   "name": "frontend-lesson",
   "version": "1.0.0",
-  "description": "Front End With Narek",
+  "description": "Front End With Sami",
   "main": "index.js",
   "scripts": {
-    "dev": "gulp dev",
-    "build": "gulp build",
-    "watch": "gulp watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev" : "gulp dev",
+	"build" : "gulp build",
+	"watch" : "gulp watch"
   },
   "keywords": [
     "Armenia",
+    "JavaScript",
     "Front-End",
-    "Narek",
-    "JavaScript"
+    "Sami",
+    "Անվճար_Ծրագրավորում"
   ],
-  "author": "Narek Aghasyan",
+  "author": "Sami Hayrapetyan",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.18.6",
