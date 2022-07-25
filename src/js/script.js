@@ -5,7 +5,6 @@ window.addEventListener("DOMContentLoaded", () => {
 	const topNavSwitch = document.querySelector(".topNavSwitch");
 	const scrollDown = document.querySelector(".scrollDown");
 	const main = document.querySelector("main");
-
 	const save = topNavSwitch.innerHTML;
 	menuBtn.addEventListener("click", () => {
 		if (!menuBtn.classList.contains("open")) {
@@ -13,7 +12,6 @@ window.addEventListener("DOMContentLoaded", () => {
 			navMenu.classList.add("active_nav");
 			topNavSwitch.innerHTML = "";
 			topNavSwitch.insertAdjacentHTML("afterbegin", logo.innerHTML);
-			console.log(topNavSwitch);
 			
 		} else {
 			menuBtn.classList.remove("open");
@@ -24,16 +22,35 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 
 	try {
+		const h = main.offsetTop - 105;
 		scrollDown.addEventListener("click", (e) => {
-			main.scrollIntoView({
-				block: "start",
+			window.scrollTo({
+				left: 0,
+				top: h,
 				behavior: "smooth"
 			});
-			window.addEventListener("scroll", () => {
-				window.scrollY < main.offsetTop - 80 ? 
-				main.removeAttribute("style") : 
-				main.style.cssText = "padding-top: 100px";
-			});
 		});
-	} catch{}
+	} catch{}	
+	
+	try{
+	const item = document.querySelectorAll(".item");
+	const itemTitle = document.querySelectorAll(".item_footer h3 a");
+		
+		
+		item.forEach(item => {
+			item.setAttribute(
+				"title", 
+				item.children[1]
+				.children[0]
+				.textContent.trim()
+			);
+		})
+
+		itemTitle.forEach(title => {
+			if(title.textContent.length >= 20) {
+				title.textContent = title.textContent.slice(0, 20) + "..."
+			}
+		});
+
+	}catch{}
 });
