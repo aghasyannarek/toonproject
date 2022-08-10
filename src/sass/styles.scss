@@ -1,8 +1,8 @@
 // static files
 @import "./sass_modules/nav";
 @import "./sass_modules/header";
-@import "./sass_modules/main.scss";
-@import "./sass_modules/footer.scss";
+@import "./sass_modules/main";
+@import "./sass_modules/footer";
 
 // global
 @import "./sass_modules/global_styles";
@@ -11,7 +11,6 @@
 body {
 	font-family: NSARegular, "Roboto", sans-serif;
 	overflow-x: hidden;
-
 	&::-webkit-scrollbar {
 		width: 7px;
 		height: 7px;
@@ -39,3 +38,10 @@ a {
 		color: $primary;
 	}
 }
+
+.swiper-button-next, .swiper-button-prev {
+	top: 42% !important;
+	font-weight: bold;
+	color: $primary !important;
+}
+

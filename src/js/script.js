@@ -53,4 +53,30 @@ window.addEventListener("DOMContentLoaded", () => {
 		});
 
 	}catch{}
+
+	try{
+		new Swiper(".swiper-container", {
+			loop: true,
+			slidesPerView: 3,
+			spaceBetween: 30,
+			navigation: {
+			  nextEl: ".swiper-button-next",
+			  prevEl: ".swiper-button-prev",
+			},
+			breakpoints: {
+				320: {
+					slidesPerView: 1
+				  },
+				480: {
+					slidesPerView: 1
+				  },
+				768: {
+				  slidesPerView: 2
+				},
+				1024: {
+				  slidesPerView: 3
+				}
+			  }
+		  });
+	}catch{}
 });
