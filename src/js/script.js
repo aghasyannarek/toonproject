@@ -21,7 +21,8 @@ window.addEventListener("DOMContentLoaded", () => {
 		}
 	});
 
-	try {
+	try {	
+	
 		const h = main.offsetTop - 105;
 		scrollDown.addEventListener("click", (e) => {
 			window.scrollTo({
@@ -30,9 +31,8 @@ window.addEventListener("DOMContentLoaded", () => {
 				behavior: "smooth"
 			});
 		});
-	} catch{}	
-	
-	try{
+	} catch{}
+	try {
 	const item = document.querySelectorAll(".item");
 	const itemTitle = document.querySelectorAll(".item_footer h3 a");
 		
@@ -52,9 +52,8 @@ window.addEventListener("DOMContentLoaded", () => {
 			}
 		});
 
-	}catch{}
-
-	try{
+	} catch{}
+	try {
 		new Swiper(".swiper-container", {
 			loop: true,
 			slidesPerView: 3,
@@ -78,5 +77,5 @@ window.addEventListener("DOMContentLoaded", () => {
 				}
 			  }
 		  });
-	}catch{}
+	} catch{}
 });

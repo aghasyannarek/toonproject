@@ -7,6 +7,8 @@
 	<title> Toon | Կահույքի Խանութ</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/lightgallery.css">
+	<link rel="stylesheet" href="css/lg-transitions.min.css">
 </head>
 
 <body>
@@ -233,6 +235,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- Our Team -->
 		<div class="container">
 			 <h2 class="title">Մեր թիմը</h2>
 			 <div class="our_team swiper-container">
@@ -269,6 +272,30 @@
 				<div class="swiper-button-next"></div>
 				<div class="swiper-button-prev"></div>
 			 </div>
+		</div>
+		<!-- Our Works -->
+		<div class="container">
+			<h2 class="title">
+				Մեր Աշխատանքները
+			</h2>
+
+			<div class="lightgallery">
+				<a href="img/prod1.jpg">
+					<img src="img/prod1.jpg" alt="product title">
+				</a>
+				<a href="img/prod2.jpg">
+					<img src="img/prod2.jpg" alt="product title">
+				</a>
+				<a href="img/prod3.jpg">
+					<img src="img/prod3.jpg" alt="product title">
+				</a>
+				<a href="img/prod4.jpg">
+					<img src="img/prod4.jpg" alt="product title">
+				</a>
+				<a href="img/prod5.jpg">
+					<img src="img/prod5.jpg" alt="product title">
+				</a>
+			</div>
 		</div>
 	</main>
 	<footer>
@@ -316,5 +343,16 @@
 	</footer>
 	<script src="js/all.js"></script>
 	<script src="libs/swiper.min.js"></script>
+
+	<!-- Light Gallery -->
+	<script src="libs/lightgallery.min.js"></script>
+	<script src="libs/lg-zoom.min.js"></script>
+	<script src="libs/lg-thumbnail.min.js"></script>
+	<script src="libs/lg-share.min.js"></script>
+	<script src="libs/lg-pager.min.js"></script>
+	<script src="libs/lg-autoplay.min.js"></script>
+	<script>
+		lightGallery(document.getElementById('lightgallery'));
+	</script>
 </body> 
 </html>
